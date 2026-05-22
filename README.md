@@ -12,9 +12,9 @@
 ---
 
 ## 👨‍💻 About the Author
-* **LinkedIn:** [Add your LinkedIn URL here]
-* **GitHub:** [Add your GitHub URL here]
-* **Portfolio/Coding Profile:** [Add your Portfolio URL here]
+* **LinkedIn:** [https://www.linkedin.com/in/sauvir-wodehra-032821257/]
+* **GitHub:** [https://github.com/SauvirWodehra]
+* **Portfolio/Coding Profile:** [https://leetcode.com/u/Sauvirr/]
 
 ---
 
