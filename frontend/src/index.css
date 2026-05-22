@@ -241,3 +241,27 @@ ul, ol {
   animation: shimmer 1.5s infinite;
   border-radius: var(--radius-sm);
 }
+
+/* ============================================================================
+   Global Responsive Overrides
+   ============================================================================ */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 var(--space-sm);
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 var(--space-xs);
+  }
+
+  /* Make tables scrollable on small screens */
+  .product-detail__specs {
+    overflow-x: auto;
+  }
+
+  .product-detail__specs-table {
+    min-width: 280px;
+  }
+}
