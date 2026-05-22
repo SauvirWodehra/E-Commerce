@@ -23,10 +23,13 @@ const app = express();
 // Middleware
 // ---------------------------------------------------------------------------
 
-// Enable CORS for frontend requests (React dev server on port 5173)
+// Enable CORS for frontend requests
 app.use(cors({
-  origin: ['http://localhost:5173', 'http://localhost:3000'],
-  methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH'],
+  origin: (origin, callback) => {
+    // Allow all origins for the sake of easy deployment in this assignment
+    callback(null, true);
+  },
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
   credentials: true,
 }));
 

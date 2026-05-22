@@ -6,7 +6,7 @@
  * Includes auth token management for protected endpoints.
  */
 
-const API_BASE_URL = '/api';
+const API_BASE_URL = import.meta.env.VITE_API_URL || '/api';
 
 // ---------------------------------------------------------------------------
 // Token Management
