@@ -6,6 +6,18 @@
 
 ---
 
+## 🌐 Live Demo
+**👉 [https://sauvir-amazon-clone.vercel.app](https://sauvir-amazon-clone.vercel.app)**
+
+---
+
+## 👨‍💻 About the Author
+* **LinkedIn:** [Add your LinkedIn URL here]
+* **GitHub:** [Add your GitHub URL here]
+* **Portfolio/Coding Profile:** [Add your Portfolio URL here]
+
+---
+
 ## 🚀 Features
 
 This project implements all core assignment requirements with high visual fidelity to Amazon, plus additional bonus features.
@@ -41,6 +53,10 @@ This project implements all core assignment requirements with high visual fideli
 * bcryptjs (Password hashing)
 * Nodemailer (Email services)
 * Stripe SDK (Payments)
+
+**Deployment & Hosting:**
+* **Frontend & Backend:** Vercel (Serverless Functions)
+* **Database:** Neon (Serverless PostgreSQL)
 
 ---
 
