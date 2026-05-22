@@ -71,7 +71,13 @@ This project implements all core assignment requirements with high visual fideli
    ```bash
    npm install
    ```
-3. The `.env` file is already configured with test credentials (including a valid Gmail App Password for SMTP and Stripe test keys). Ensure your PostgreSQL password matches the `DB_PASSWORD` in the `.env` file.
+3. Configure Environment Variables:
+   * Copy the example environment file:
+     ```bash
+     cp .env.example .env
+     ```
+   * Open `.env` and fill in your PostgreSQL `DB_PASSWORD`.
+   * (Optional) Add your Gmail App Password for real emails, or leave blank to fallback to Ethereal/test mode.
 4. Start the backend server:
    ```bash
    npm run dev
