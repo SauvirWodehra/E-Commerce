@@ -30,6 +30,7 @@ CREATE TABLE IF NOT EXISTS products (
   rating DECIMAL(2, 1) DEFAULT 0 CHECK (rating >= 0 AND rating <= 5),
   review_count INTEGER DEFAULT 0 CHECK (review_count >= 0),
   primary_image_url VARCHAR(500),
+  specifications JSONB,
   created_at TIMESTAMP DEFAULT NOW()
 );
 
