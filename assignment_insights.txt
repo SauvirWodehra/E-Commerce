@@ -1,0 +1,85 @@
+================================================================================
+E-Commerce Platform (Amazon Clone) - Assignment Insights
+================================================================================
+
+1. PROBLEM STATEMENT / DESCRIPTION
+----------------------------------
+* Goal: Build a functional full-stack e-commerce web application that closely 
+  replicates Amazon's design, user experience, and visual patterns.
+* Core Visuals: The UI, layout structure, navigation, and interaction designs 
+  must closely resemble Amazon's.
+* Crucial Constraints & UI Design Notes:
+  - High Fidelity UI: Must study and copy Amazon's navigation, product cards, 
+    detail page, and cart layouts carefully before starting.
+  - Authentication (No Login Required initially): Assume a default user is 
+    already logged in. Focus on the core e-commerce flow. (User login/signup is 
+    a "Good to Have" bonus feature).
+  - Seed Data: Must seed the database with sample products across multiple 
+    categories.
+  - Plagiarism: Must be original work. Plagiarism from existing repositories 
+    results in immediate disqualification.
+
+2. TECHNICAL STACK
+------------------
+* Frontend:
+  - React.js OR Next.js (Must be a Single Page Application / SPA)
+* Backend:
+  - Node.js with Express.js OR Python with FastAPI/Django
+* Database:
+  - PostgreSQL OR MySQL
+  - Custom schema design with proper relationships (this will be evaluated)
+* Deployment:
+  - Frontend/Backend deployed to platforms like Vercel, Netlify, Render, Railway, 
+    or any other cloud service.
+  - Code must be hosted in a public GitHub repository.
+
+3. CORE FEATURES (MUST HAVE)
+----------------------------
+Based on the assignment PDF, the application must implement the following four 
+core components/pages with high visual fidelity to Amazon's interface:
+
+1. Product Listing Page:
+   * Grid Layout: Display products in a structured grid matching Amazon's UI.
+   * Product Cards: Show the product Image, Name, Price, and an "Add to Cart" button.
+   * Search Bar: Fully functional search input to find products by their name.
+   * Category Filter: Ability to filter displayed products by their category.
+
+2. Product Detail Page:
+   * Image Carousel: Displays multiple product images in a swipeable or clickable carousel.
+   * Product Info: Complete product description and detailed specifications.
+   * Inventory Status: Display clear price and stock availability status (e.g., "In Stock").
+   * Action Buttons: Fully functional "Add to Cart" and "Buy Now" buttons.
+
+3. Shopping Cart:
+   * Cart View: A dedicated page or drawer displaying all items added to the cart.
+   * Quantity Adjustment: Ability to increase or decrease product quantities.
+   * Item Removal: Ability to remove individual items from the cart.
+   * Cart Summary: Display a calculated subtotal and final total amount.
+
+4. Order Placement:
+   * Shipping Form: A checkout page with a shipping address input form.
+   * Order Review: A detailed summary page to review items and shipping address before placing the order.
+   * Place Order Logic: Functionality to submit and record the order in the database.
+   * Order Confirmation: A confirmation page that displays the newly generated Order ID.
+
+4. IMPORTANT NOTES
+------------------
+* UI Design Resemblance: Study Amazon's UI carefully before starting. The design must closely resemble Amazon's layout structure, navigation, product cards, detail page, and cart.
+* Assume Logged-In User: A default user is assumed to be logged in. Focus on implementing e-commerce functionality, and only work on user authentication (Login/Signup) as a bonus feature.
+* Database Schema Design: You must design your own schema with proper relationships. This database design will be a key factor in the evaluation.
+* Database Seeding: The database must be seeded with realistic sample products across multiple categories.
+* README File: A README must be provided. It should include clear setup instructions, the tech stack used, and any assumptions made.
+* Plagiarism Warning: Absolutely no plagiarism from existing repositories. Plagiarism results in immediate disqualification.
+
+5. EVALUATION CRITERIA & TIMELINE
+---------------------------------
+* Evaluation Focus Areas:
+  - Functionality: All core features (Listing, Detail, Cart, Order) must work correctly.
+  - UI/UX: High visual similarity to Amazon's design and UX patterns.
+  - Database Design: A well-structured schema with proper tables and relationships.
+  - Code Quality: Clean, readable, and well-organized code.
+  - Code Modularity: Proper separation of concerns and reusable components.
+  - Code Understanding: Ability to explain every line of your code during the evaluation interview.
+* Timeline:
+  - Submission Deadline: 2 days from the date of receiving this assignment.
+  - Deliverables: Public GitHub repository link and a link to the deployed application.

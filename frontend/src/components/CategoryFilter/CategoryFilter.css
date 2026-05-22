@@ -1,0 +1,86 @@
+/*
+ * CategoryFilter Component Styles
+ * Horizontal category filter bar matching Amazon's category navigation.
+ */
+
+.category-filter {
+  background-color: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+  padding: var(--space-md) 0;
+  position: sticky;
+  top: var(--navbar-height);
+  z-index: 50;
+}
+
+.category-filter__container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-lg);
+}
+
+.category-filter__title {
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  color: var(--color-text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: var(--space-sm);
+}
+
+.category-filter__list {
+  display: flex;
+  gap: var(--space-sm);
+  overflow-x: auto;
+  padding-bottom: var(--space-xs);
+  scrollbar-width: thin;
+}
+
+.category-filter__list::-webkit-scrollbar {
+  height: 4px;
+}
+
+.category-filter__list::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: 4px;
+}
+
+.category-filter__btn {
+  padding: var(--space-sm) var(--space-lg);
+  border: 1px solid var(--color-border);
+  border-radius: 20px;
+  background-color: var(--color-surface);
+  color: var(--color-text-primary);
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.category-filter__btn:hover {
+  background-color: #f5f5f5;
+  border-color: #bbb;
+}
+
+.category-filter__btn--active {
+  background-color: var(--color-primary);
+  color: var(--color-text-white);
+  border-color: var(--color-primary);
+}
+
+.category-filter__btn--active:hover {
+  background-color: var(--color-primary-light);
+  border-color: var(--color-primary-light);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .category-filter__container {
+    padding: 0 var(--space-sm);
+  }
+
+  .category-filter__btn {
+    padding: 6px var(--space-md);
+    font-size: var(--font-size-xs);
+  }
+}

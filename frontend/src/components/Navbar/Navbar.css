@@ -1,0 +1,224 @@
+/*
+ * Navbar Component Styles
+ * Replicates Amazon's top navigation bar design.
+ */
+
+.navbar {
+  background-color: var(--color-primary);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+}
+
+.navbar__main {
+  display: flex;
+  align-items: center;
+  height: var(--navbar-height);
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-lg);
+  gap: var(--space-lg);
+}
+
+/* Logo */
+.navbar__logo {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-xs) var(--space-sm);
+  border: 1px solid transparent;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.navbar__logo:hover {
+  border-color: var(--color-text-white);
+  text-decoration: none;
+}
+
+.navbar__logo-text {
+  color: var(--color-text-white);
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.navbar__logo-suffix {
+  color: var(--color-secondary);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Search Bar */
+.navbar__search {
+  flex: 1;
+  display: flex;
+  height: 40px;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+
+.navbar__search-input {
+  flex: 1;
+  padding: 0 var(--space-md);
+  border: none;
+  font-size: var(--font-size-md);
+  font-family: inherit;
+  outline: none;
+  background: var(--color-surface);
+  color: var(--color-text-primary);
+}
+
+.navbar__search-input::placeholder {
+  color: var(--color-text-secondary);
+}
+
+.navbar__search-btn {
+  width: 46px;
+  background-color: var(--color-secondary);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color var(--transition-fast);
+}
+
+.navbar__search-btn:hover {
+  background-color: var(--color-accent-hover);
+}
+
+.navbar__search-icon {
+  width: 20px;
+  height: 20px;
+  color: var(--color-primary);
+}
+
+/* Nav Actions (Cart, etc.) */
+.navbar__actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  flex-shrink: 0;
+}
+
+.navbar__action-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  padding: var(--space-xs) var(--space-sm);
+  border: 1px solid transparent;
+  border-radius: var(--radius-sm);
+  color: var(--color-text-white);
+  cursor: pointer;
+  text-decoration: none;
+  transition: border-color var(--transition-fast);
+}
+
+.navbar__action-item:hover {
+  border-color: var(--color-text-white);
+  text-decoration: none;
+  color: var(--color-text-white);
+}
+
+.navbar__action-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.navbar__action-label {
+  font-size: var(--font-size-xs);
+  color: #ccc;
+}
+
+.navbar__action-value {
+  font-size: var(--font-size-md);
+  font-weight: 700;
+}
+
+/* Cart */
+.navbar__cart {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.navbar__cart-icon {
+  width: 28px;
+  height: 28px;
+}
+
+.navbar__cart-count {
+  position: absolute;
+  top: -2px;
+  left: 14px;
+  background-color: var(--color-accent);
+  color: var(--color-text-white);
+  font-size: 12px;
+  font-weight: 700;
+  min-width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar__cart-label {
+  font-size: var(--font-size-md);
+  font-weight: 700;
+  color: var(--color-text-white);
+}
+
+/* Wishlist */
+.navbar__wishlist {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.navbar__wishlist-icon {
+  width: 26px;
+  height: 26px;
+}
+
+.navbar__wishlist-count {
+  position: absolute;
+  top: -4px;
+  right: -8px;
+  background-color: var(--color-accent);
+  color: var(--color-text-white);
+  font-size: 11px;
+  font-weight: 700;
+  min-width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar__main {
+    padding: 0 var(--space-sm);
+    gap: var(--space-sm);
+  }
+
+  .navbar__logo-text {
+    font-size: 18px;
+  }
+
+  .navbar__logo-suffix {
+    display: none;
+  }
+
+  .navbar__action-text {
+    display: none;
+  }
+}
