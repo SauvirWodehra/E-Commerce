@@ -51,9 +51,9 @@ This project implements all core assignment requirements with high visual fideli
 2. **PostgreSQL** (Running locally on port 5432)
 
 ### 1. Database Setup
-1. Open pgAdmin or `psql` and create a database named `SDE`:
+1. Open pgAdmin or your terminal (`psql`) and create a database named `sde_ecommerce`:
    ```sql
-   CREATE DATABASE "SDE";
+   CREATE DATABASE sde_ecommerce;
    ```
 2. Run the SQL scripts located in the `backend/database/` folder in this exact order to build the schema and seed realistic Amazon product data:
    * `schema.sql` (Creates tables)
@@ -61,6 +61,8 @@ This project implements all core assignment requirements with high visual fideli
    * `add_specs.sql` (Adds technical specifications)
    * `migration_phase3.sql` (Adds OTP, Wishlist, and Order schemas)
    * `migration_phase4.sql` (Adds payment method columns)
+
+*Note: If your PostgreSQL runs on a custom port or requires a specific username (other than `postgres`), you will need to update those values in the `.env` file in the next step.*
 
 ### 2. Backend Setup
 1. Navigate to the backend directory:
